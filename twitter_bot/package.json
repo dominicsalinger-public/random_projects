@@ -1,0 +1,15 @@
+{
+  "name": "twitter_bot",
+  "version": "1.0.0",
+  "description": "First pass at twitter_bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dominic Pearson <dominicsalinger@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.9"
+  }
+}
