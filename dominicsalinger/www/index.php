@@ -13,8 +13,19 @@
 
     <div id="example"></div>
     <script type="text/babel">
-      ReactDOM.render(<h1>Hi, this is a test</h1>, document.getElementById('example'));
+
+    var Movie = React.createClass({
+      render: function () {
+        return (
+          <div>
+            <h1>{this.props.title}</h1>
+            <h2>{this.props.genre}</h2>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(<Movie title="Lord of the Rings" genre="Adventure Fantasy"/>, document.getElementById('example'));
     </script>
   </body>
 </html>
-https://www.youtube.com/watch?v=OzqR10jG1pg&list=PL6gx4Cwl9DGBuKtLgPR_zWYnrwv-JllpA&index=2#t=7.838196
